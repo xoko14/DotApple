@@ -1,0 +1,9 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ import namespace="System.IO" #>
+using System;
+
+public static class Binary
+{
+    private const string _DATA = "<#= Convert.ToBase64String(File.ReadAllBytes(Host.ResolvePath("badapple-64px.ba")))#>";
+    public static byte[] Data => Convert.FromBase64String(_DATA);
+}

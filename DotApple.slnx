@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DotApple.Example/DotApple.Example.csproj" />
+  <Project Path="DotApple/DotApple.csproj" />
+</Solution>

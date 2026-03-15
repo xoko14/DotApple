@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Features>$(Features);experimental-data-section-string-literals</Features>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="Binary.tt">
+        <Generator>TextTemplatingFileGenerator</Generator>
+        <LastGenOutput>Binary.cs</LastGenOutput>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Binary.cs">
+        <AutoGen>True</AutoGen>
+        <DesignTime>True</DesignTime>
+        <DependentUpon>Binary.tt</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
