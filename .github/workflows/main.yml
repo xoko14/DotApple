@@ -19,7 +19,7 @@ jobs:
           dotnet-version: 10.0.x
       
       - name: build
-        run: dotnet build --project DotApple/DotApple.csproj --configuration Release
+        run: dotnet build DotApple/DotApple.csproj --configuration Release
 
       - name: Pack with dotnet
         run: |
