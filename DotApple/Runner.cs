@@ -68,5 +68,13 @@ namespace DotApple
                 }
             }
         }
+
+        public static void Run(string arg)
+        {
+            if(arg == "badapple")
+            {
+                Runner.Run();
+            }
+        }
     }
 }
